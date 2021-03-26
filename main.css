@@ -1,0 +1,110 @@
+:root{
+	font-family:'Courgette',sans-serif;
+	font-size:24px;}
+body{
+	color:#321;
+	background-color:#fed;
+	line-height:1.5;}
+#top-left-corner{
+	box-sizing:border-box;
+	position:fixed;
+	top:0;
+	left:0;
+	transform:scaleX(-1);
+	width:15vw;
+	height:calc(15vw/331*387);}
+#top-right-corner{
+	box-sizing:border-box;
+	position:fixed;
+	top:0;
+	right:0;
+	width:15vw;
+	height:calc(15vw/331*387);}
+#bottom-left-corner{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:15vw;
+	height:calc(15vw/349*451);}
+#bottom-right-corner{
+	box-sizing:border-box;
+	position:fixed;
+	bottom:0;
+	right:0;
+	transform:scaleX(-1);
+	width:15vw;
+	height:calc(15vw/349*451);}
+#top-scroll-block{
+	box-sizing:border-box;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:calc(6.25vw/331*387);
+	background-color:#fed;}
+#bottom-scroll-block{
+	box-sizing:border-box;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:calc(6.25vw/349*451);
+	background-color:#fed;}
+main{
+	box-sizing:border-box;
+	margin-top:calc(2vw/331*387);
+	margin-bottom:calc(2vw/349*451);
+	/*margin-left:18.75vw;
+	margin-right:18.75vw;*/
+	margin-left:15vw;
+	margin-right:15vw;}
+#grandma-young{
+	box-sizing:border-box;
+	border-radius:100% / 100%;
+	box-shadow:0 0 2em #987;
+	max-width:100%;}
+.picture{
+	box-sizing:border-box;
+	margin:0.25em;
+	max-width:100%;
+	border-radius:6.25%;
+	box-shadow:0 0 2em #987;}
+main>header{
+	text-align:center;}
+figure{
+	margin:1em;
+	text-align:center;}
+p{
+	margin:0.25em;}
+h1{
+	margin:0.25em;
+	font-size:2em;
+	text-align:center;}
+h2{
+	margin:0.25em;
+	font-size:1.5em;
+	text-align:center;}
+ol{
+	margin:0.25em;
+	padding-left:1em;
+	list-style-type:decimal;}
+q{
+	quotes:"“" "”" "‘" "’";
+	font-style:italic;}
+q::before{
+	content:open-quote;}
+q::after{
+	content:close-quote;}
+main>header{
+	page-break-after:always;}
+section{
+	border-top:thin solid;
+	page-break-after:always;}
+@media (min-width:800px){
+	.picture{
+		max-width:75%;}}
+@media print{
+	@page{
+		margin:0;}
+	section,main>header{
+		padding-top:1in;}}
